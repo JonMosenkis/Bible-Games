@@ -1,29 +1,42 @@
 $(document).ready(function () {
+var countMePoints = 0;
+var countYouPoint = 0;
+var consume = "";
+var currQ = 0;
 
-    //טעינה של נתונים מקובץ חיצוני
-    $("#songBtn").click(function () {
-        $("#myDiv h1").load("TextFile.txt");
+$(".queOptions").click(function () {
+  if ($(this).hasClass("correct"))
+  {
+    $(this).addClass("right");
+    setTimeout(function () {
+    countMePoints+=1; }, 1000);
+  }
+  else
+  {
+    $(this).addClass("wrong");
+    setTimeout(function () {
+      countYouPoint+=1; }, 1000);
+  }
+
+  $('#mePoints').text(countMePoints);
+  $('#youPoints').text(countYouPoint);
+
+
+
+//get next question
+  currQ = ($(this).parent()).index();
+  currQ+=1;
+
+//chack ans
+setTimeout(function () {
+  $(".question").addClass("hidden");
+  $(".question[data-id|=" + currQ + "]").removeClass("hidden");
+}, 1000);
+//show feedback
+
+
+//chack win
+
     });
 
-
-    //קבלה של נתונים באמצעות GET
-    $("#getBtn").click(function () {
-        $.get("Default.asp", function (data, status) {
-            alert("Data: " + data + "\nStatus: " + status);
-            console.log(status);
-
-        });
-    });
-
-    //שליחה וקבלה של נתונים באמצעות POST
-    $("#postBtn").click(function () {
-        $.post("Default2.asp",
-            {
-                name:"Donald Duck",
-                city:"Duckburg"
-            },
-            function(data,status){
-                alert("Data: " + data + "\nStatus: " + status);
-            });
-        });
 });

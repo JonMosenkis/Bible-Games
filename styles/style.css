@@ -28,6 +28,7 @@ html, body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  direction:rtl;
 }
 
 html {
@@ -205,19 +206,20 @@ body {
 
 .weather-forecast .date, .weather-forecast .description {
   font-size: 1.25em; }
-  
+
 .header {
  /* width: 359.9px;
   height: 54.3px; */
-  border: solid 0.5px #979797;
-  background: #ffffff;
+ border: solid 0.5px #979797;
+ background: #ffffff;
+ padding-bottom: 1.5em;
 }
 
 #logoHl {
   /*width: 135px;
   height: 35px; */
-  font-family: Heebo;
-  font-size: 24px;
+  font-family: "Heebo", sans-serif;
+  font-size: 26px;
   text-align: center;
   color: #000000;
   margin: auto;
@@ -243,36 +245,52 @@ body {
   color: #000000;
 }
 
+#mainInnerHl{
+  font-size:1.4em;
+  position:relative;
+  width:100%;
+  text-align: center;
+  /* margin: auto; */
+  padding-top: 0.5em;
+}
 .mainInnerQoQ {
   font-size: 20px;
   font-weight: normal;
   line-height: 1.65;
 }
 
-.laTimer {
+#laTimer {
   width: 88px;
   height: 88px;
-  border: solid 4px #979797;
+  clear:both;
 }
 
-#mePoints {
-  width: 42px;
-  height: 55px;
-  font-family: Heebo;
+
+.laPoints{
+  width: 50px;
+  height: 50px;
+  padding: 0.1em 0.4em;
   font-size: 37px;
-  text-align: center;
+  font-family: Heebo;
   color: #000000;
+  border-radius: 1em;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+
+#mePoints {
+  font-family: sans-serif;
+  margin-right: 1em;
+  float: right;
+  padding: 0.3em 0.6em;
+  width: 70px;
+  height: 70px;
 }
 
 #youPoints {
-  width: 42px;
-  height: 55px;
-  font-family: Heebo;
-  font-size: 37px;
-  text-align: center;
-  color: #000000;
-  position: absolute;
-  right: 0px;
+  float: left;
+  margin-left:1em;
 }
 
 .hidden {
@@ -290,3 +308,26 @@ body {
   .weather-forecast .future .oneday .icon {
     width: 32px;
     height: 32px; } }
+
+.theMainQ, .queOptions{
+  width:100%;
+  text-align:center;
+  font-size:20px;
+  background:gray;
+  padding:1em;
+  color:white;
+}
+
+.queOptions{
+background:#6e9fa2;
+border :1px solid white;
+}
+
+.right{
+  background-color: green;
+}
+
+.wrong
+{
+  background-color: red;
+}
