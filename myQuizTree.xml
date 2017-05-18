@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quizTree>
+	<users>
+    <userValid userName="jonathan" password="123456">
+    </userValid>
+		<userValid userName="mazi" password="123456">
+		</userValid>
+	</users>
+	<idCounter>22</idCounter>
+	<topic subject="">
+		<level stage="1" pointPerQuestion="1">
+			<question id="1">
+				<text></text>
+				<answer feedback="true"></answer>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+			</question>
+			<question id="2">
+				<text></text>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+			</question>
+			<question id="3">
+				<text></text>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+			</question>
+			<question id="4">
+				<text></text>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+			</question>
+			<question id="5">
+				<text></text>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+			</question>
+			<question id="6">
+				<text></text>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+				<answer></answer>
+			</question>
+		</level>
+</quizTree>
