@@ -205,6 +205,75 @@ body {
 
 .weather-forecast .date, .weather-forecast .description {
   font-size: 1.25em; }
+  
+.header {
+  width: 359.9px;
+  height: 54.3px;
+  border: solid 0.5px #979797;
+}
+
+#logoHI {
+  width: 135px;
+  height: 35px;
+  font-family: Heebo;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+#preveBtn {
+  width: 13px;
+  height: 35px;
+  font-family: Heebo;
+  font-size: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+#sttsBar {
+  width: 211px;
+  height: 66px;
+  font-family: Heebo;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.38;
+  text-align: center;
+  color: #000000;
+}
+
+#mainInnerQoQ {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.65;
+}
+
+#laTimer {
+  width: 88px;
+  height: 88px;
+  border: solid 4px #979797;
+}
+
+#mePoints {
+  width: 42px;
+  height: 55px;
+  font-family: Heebo;
+  font-size: 37px;
+  text-align: center;
+  color: #000000;
+}
+
+#youPoints {
+  width: 42px;
+  height: 55px;
+  font-family: Heebo;
+  font-size: 37px;
+  text-align: center;
+  color: #000000;
+}
+
+.hidden {
+  display: None;
+}
 
 @media (max-width: 450px) {
   .weather-forecast .date, .weather-forecast .description {
