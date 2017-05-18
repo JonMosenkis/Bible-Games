@@ -212,7 +212,7 @@ body {
   border: solid 0.5px #979797;
 }
 
-#logoHI {
+.logoHI {
   width: 135px;
   height: 35px;
   font-family: Heebo;
@@ -221,7 +221,7 @@ body {
   color: #000000;
 }
 
-#preveBtn {
+.preveBtn {
   width: 13px;
   height: 35px;
   font-family: Heebo;
@@ -230,7 +230,7 @@ body {
   color: #000000;
 }
 
-#sttsBar {
+.sttsBar {
   width: 211px;
   height: 66px;
   font-family: Heebo;
@@ -241,19 +241,19 @@ body {
   color: #000000;
 }
 
-#mainInnerQoQ {
+.mainInnerQoQ {
   font-size: 20px;
   font-weight: normal;
   line-height: 1.65;
 }
 
-#laTimer {
+.laTimer {
   width: 88px;
   height: 88px;
   border: solid 4px #979797;
 }
 
-#mePoints {
+.mePoints {
   width: 42px;
   height: 55px;
   font-family: Heebo;
@@ -262,7 +262,7 @@ body {
   color: #000000;
 }
 
-#youPoints {
+.youPoints {
   width: 42px;
   height: 55px;
   font-family: Heebo;
