@@ -207,18 +207,20 @@ body {
   font-size: 1.25em; }
   
 .header {
-  width: 359.9px;
-  height: 54.3px;
+ /* width: 359.9px;
+  height: 54.3px; */
   border: solid 0.5px #979797;
+  background: #ffffff;
 }
 
-.logoHI {
-  width: 135px;
-  height: 35px;
+#logoHl {
+  /*width: 135px;
+  height: 35px; */
   font-family: Heebo;
   font-size: 24px;
   text-align: center;
   color: #000000;
+  margin: auto;
 }
 
 .preveBtn {
@@ -253,7 +255,7 @@ body {
   border: solid 4px #979797;
 }
 
-.mePoints {
+#mePoints {
   width: 42px;
   height: 55px;
   font-family: Heebo;
@@ -262,13 +264,15 @@ body {
   color: #000000;
 }
 
-.youPoints {
+#youPoints {
   width: 42px;
   height: 55px;
   font-family: Heebo;
   font-size: 37px;
   text-align: center;
   color: #000000;
+  position: absolute;
+  right: 0px;
 }
 
 .hidden {
