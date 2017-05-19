@@ -20,6 +20,7 @@ $(".queOptions").click(function () {
 
   $('#mePoints').text(countMePoints);
   $('#youPoints').text(countYouPoint);
+  $('#laTimer').text('0');
 
 
 
@@ -28,7 +29,7 @@ $(".queOptions").click(function () {
   currQ+=1;
 
 //chack ans
-setTimeout(function () {
+setInterval(function () {
   $(".question").addClass("hidden");
   $(".question[data-id|=" + currQ + "]").removeClass("hidden");
 }, 1000);

@@ -260,9 +260,13 @@ body {
 }
 
 #laTimer {
-  width: 88px;
-  height: 88px;
-  clear:both;
+    width: 88px;
+    height: 88px;
+    clear: both;
+    margin: auto;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 

@@ -47,7 +47,7 @@
   <div id="pointsBar">
     <span class="laPoints" id="mePoints">0</span>
     <span class="laPoints" id="youPoints">0</span>
-    <div id="laTimer">0:00</div>
+    <div id="laTimer">0</div>
   </div>
 </div>
   <div id="QuestionsBar">
@@ -128,5 +128,12 @@
   <!-- Uncomment the line below when ready to test with fake data -->
   <script src="scripts/app.js" async></script>
 <script src="scripts/main.js"></script>
+<script>
+  setInterval(function (x) {
+  var time = parseInt($("#laTimer").text()) + 1;
+  $("#laTimer").html(time)
+}, 1000)
+
+</script>
 </body>
 </html>
