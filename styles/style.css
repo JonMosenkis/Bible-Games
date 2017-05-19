@@ -59,16 +59,16 @@ body {
   -webkit-align-content: stretch;
       -ms-flex-line-pack: stretch;
           align-content: stretch;
-  background: #ececec; }
+ background-image:url(../images/bg.jpg)}
 
 .header {
   width: 100%;
   height: 56px;
   color: #FFF;
-  background: #3F51B5;
+  /* background: #3F51B5; */
   position: fixed;
-  font-size: 20px;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2); */
   padding: 16px 16px 0 16px;
   will-change: transform;
   display: -webkit-box;
@@ -78,27 +78,28 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-transition: -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
   transition: -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
   transition: transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
   transition: transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s, -webkit-transform 0.233s cubic-bezier(0, 0, 0.21, 1) 0.1s;
-  z-index: 1000; }
+  z-index: 1000;
+  }
 
   .header .headerButton {
     width: 24px;
@@ -210,8 +211,8 @@ body {
 .header {
  /* width: 359.9px;
   height: 54.3px; */
- border: solid 0.5px #979797;
- background: #ffffff;
+ /* border: solid 0.5px #979797; */
+ /* background: #ffffff; */
  padding-bottom: 1.5em;
 }
 
@@ -219,7 +220,7 @@ body {
   /*width: 135px;
   height: 35px; */
   font-family: "Heebo", sans-serif;
-  font-size: 26px;
+  font-size: 29px;
   text-align: center;
   color: #000000;
   margin: auto;
@@ -271,15 +272,17 @@ body {
 
 
 .laPoints{
-  width: 50px;
+/*  width: 50px;
   height: 50px;
-  padding: 0.1em 0.4em;
-  font-size: 37px;
-  font-family: Heebo;
-  color: #000000;
   border-radius: 1em;
   border: 1px solid gray;
   background-color: white;
+  */
+  padding: 0.1em 0.4em;
+  font-size: 37px;
+  font-family: sans-serif;
+  color: #ffffff;
+
 }
 
 
@@ -287,7 +290,7 @@ body {
   font-family: sans-serif;
   margin-right: 1em;
   float: right;
-  padding: 0.3em 0.6em;
+  padding: 0.3em 0.7em;
   width: 70px;
   height: 70px;
 }
@@ -325,8 +328,10 @@ body {
 .queOptions{
 background:#6e9fa2;
 border :1px solid white;
+cursor: pointer;
 }
 
+.queOptions:hover{background-color: #584747;}
 .right{
   background-color: green;
 }
@@ -334,4 +339,16 @@ border :1px solid white;
 .wrong
 {
   background-color: red;
+}
+
+.notRight{
+  background-color: yellow;
+}
+
+.pText{
+  color:white;
+  text-align: right;
+  width: 2em;
+  margin-left: 1em;
+  font-size: 0.7em;
 }
